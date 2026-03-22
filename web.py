@@ -97,7 +97,7 @@ if waveform is not None:
         st.sidebar.subheader(f"{filter_choice} Cutoff (Hz)")
         cutoff = st.sidebar.slider(
             "Frequency", 
-            min_value=20, max_value=nyquist_limit, value=min(2000, nyquist_limit), step=10
+            min_value=20, max_value=nyquist_limit, value=min(1350, nyquist_limit), step=10
         )
         cutoffs_to_pass = cutoff
         plot_title_hz = f"Cutoff: {cutoff} Hz"
